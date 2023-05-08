@@ -1,8 +1,8 @@
 const multiplicationTable = function(maxValue) {
   let result = '';
-  for(let i = 0; i < maxValue; i++) {
+  for(let i = 1; i <= maxValue; i++) {
     for(let j = 1; j <= maxValue; j++) {
-      result += j * (i + 1);
+      result += j * i;
       result += ' ';
     }
     result += '\n'
