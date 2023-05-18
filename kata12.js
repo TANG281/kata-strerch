@@ -1,20 +1,20 @@
 const chooseRecipe = function(bakeryA, bakeryB, recipes) {
   // Code here!
   let chosen = '';
-  for(let i = 0; i < recipes.length; i++) {
-    for(let j = 0; j < bakeryA.length; j++) {
-      for(let k = 0; k < bakeryB.length; k++) {
-        if(recipes[i]['ingredients'][0] === bakeryA[j] && recipes[i]['ingredients'][1] === bakeryB[k]) {
+  for (let i = 0; i < recipes.length; i++) {
+    for (let j = 0; j < bakeryA.length; j++) {
+      for (let k = 0; k < bakeryB.length; k++) {
+        if (recipes[i]['ingredients'][0] === bakeryA[j] && recipes[i]['ingredients'][1] === bakeryB[k]) {
           chosen = recipes[i]['name'];
-        } else 
-        if(recipes[i]['ingredients'][1] === bakeryA[j] && recipes[i]['ingredients'][0] === bakeryB[k]) {
+        } else
+        if (recipes[i]['ingredients'][1] === bakeryA[j] && recipes[i]['ingredients'][0] === bakeryB[k]) {
           chosen = recipes[i]['name'];
-        }    
+        }
       }
     }
   }
   return chosen;
-}
+};
 
 let bakeryA = ['saffron', 'eggs', 'tomato paste', 'coconut', 'custard'];
 let bakeryB = ['milk', 'butter', 'cream cheese'];

@@ -1,11 +1,11 @@
 const multiplicationTable = function(maxValue) {
   let result = '';
-  for(let i = 1; i <= maxValue; i++) {
-    for(let j = 1; j <= maxValue; j++) {
+  for (let i = 1; i <= maxValue; i++) {
+    for (let j = 1; j <= maxValue; j++) {
       result += j * i;
       result += ' ';
     }
-    result += '\n'
+    result += '\n';
   }
   return result;
 };

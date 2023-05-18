@@ -1,9 +1,9 @@
 const camelCase = function(input) {
   let result = '';
-  for(let i = 0; i < input.length; i++) {
-    if(input[i] !== ' ' && input[i - 1] === ' ') {
+  for (let i = 0; i < input.length; i++) {
+    if (input[i] !== ' ' && input[i - 1] === ' ') {
       result += input[i].toUpperCase();
-    } else if(input[i - 1] !== ' ' && input[i] !== ' ') {
+    } else if (input[i - 1] !== ' ' && input[i] !== ' ') {
       result += input[i];
     }
   }
