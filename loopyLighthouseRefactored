@@ -1,0 +1,11 @@
+// instead of 4 console.log, we can only call it 1 time by changing the output value in each loop
+for (let x = 100; x <= 200; x++) {
+  let output = '';
+  if (x % 3 === 0) {
+    output += 'Loopy';
+  }
+  if (x % 4 === 0) {
+    output += 'Lighthouse';
+  } else output = x;
+  console.log(output);
+}
