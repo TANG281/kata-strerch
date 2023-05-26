@@ -31,5 +31,5 @@ console.log(`Today I learned about ${concepts}.`);
 
 // Test with empty string
 let a = [];
-console.log(concatenateWithSeparator(a));
+console.log(concatenateWithSeparator(a, ', '));
 console.log(`Today I learned about ${a}.`);
